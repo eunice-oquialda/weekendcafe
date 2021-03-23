@@ -1,0 +1,650 @@
+
+
+/* FONTS
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/* ---------- ELEMENTS  ----------  */
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #2A3D41;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.h1,
+h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+}
+
+.h2,
+h2 {
+    font-size: 2rem;
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem;
+}
+
+.h4,
+h4 {
+    font-size: 1.5rem;
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem;
+}
+
+.h6,
+.p,
+h6,
+p,
+textarea {
+    font-size: 1rem;
+}
+
+.small,
+small {
+    font-size: .875rem
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding-bottom: .5rem;
+}
+
+
+/*  ----------  FLEX  ---------- */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap{
+    display: flex;
+}
+
+
+.flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+/*  ----------  Links ---------- */
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus {
+    border: 1px dashed #157fad;
+}
+
+/*  ----------  WWAPPER ---------- */
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wrapper-wide {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+/*  ----------  HEADER  ---------- */
+
+
+.support-container {
+    background-color: #C4F8E9;
+    /* color: white; */
+    font-weight: 100;
+    text-align: center;
+    padding-top: .3em;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    padding: 0;
+}
+
+.support-container a {
+    color: inherit;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.top-bar {
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    justify-content: flex-end;
+}
+
+.nav li {
+    padding: 0 1em;
+}
+
+.nav a {
+    padding: .5rem 1rem;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #55e9bc;
+}
+
+
+.social {
+    background-color: #47ffe66b;
+    padding: .4rem;
+
+}
+
+.social li {
+    padding: 0 .9rem;
+}
+
+.fix-bar {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 8px 6px -6px rgb(191, 190, 190);
+    z-index: 12;
+}
+
+/* Hero banners */
+
+
+.half {
+    height: 50vh;
+    padding-top: 5rem;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 1px #cccea0;
+}
+
+.hero-banner {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url('../images/brunch-eggs-coffeeshop.jpg'); */
+    background-image: linear-gradient(0deg, rgba(52, 55, 8, 0.3), rgba(50, 74, 75, 0.529)), url('../images/brunch-eggs-coffeeshop.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.half {
+    height: 50vh;
+    padding-top: 5rem;
+}
+
+.about-hero {
+    background-image: linear-gradient(0deg, rgba(52, 55, 8, 0.3), rgba(50, 74, 75, 0.529)), url('../images/about-hero.jpg');
+}
+
+.menu-hero {
+    background-image: linear-gradient(0deg, rgba(52, 55, 8, 0.3), rgba(50, 74, 75, 0.529)), url('../images/menu-hero.jpg');
+    background-position: center center;
+}
+
+.giftshop-hero {
+    background-image: linear-gradient(0deg, rgba(52, 55, 8, 0.3), rgba(50, 74, 75, 0.529)), url('../images/giftshop-hero.jpg');
+
+}
+
+.contact-hero {
+    background-image: linear-gradient(0deg, rgba(52, 55, 8, 0.3), rgba(50, 74, 75, 0.529)), url('../images/contact-hero.jpg');
+    background-position: left;
+}
+
+.hero-middle {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-middle img {
+    width: auto;
+    max-width: 100%;
+    vertical-align: text-bottom;
+}
+
+/*  ---------- Home ---------- */
+/* Main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.single-container {
+    /* margin: 0 auto; */
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.weekend-mention {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.single-container div p {
+    padding: 0;
+    margin: 0 3rem 1rem;
+}
+
+
+.item1 {
+    background-color: #baf8e8;
+}
+
+.menu-gift-container {
+    background-color: #fffff9;
+    display: flex;
+}
+
+.menu-gift-container img {
+    width: 50vw;
+    padding: 0;
+}
+
+.double-article {
+    display: flex;
+    width: 100vw;
+    /* flex-wrap: wrap; */
+}
+
+.photo-container {
+    width: 50%;
+    height: 100%;
+    /* display: block; */
+    padding: 2rem;
+    background-image: url('../images/close-up-breakfast.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    content: "";
+}
+
+.reservations {
+    background-image: url('../images/cafe-interior.jpg');
+}
+
+.gift {
+    background-image: url('../images/butter-croissant-table.jpg');
+    background-position: center bottom;
+}
+
+.text-container {
+    width: 50%;
+    max-width: 35%;
+    text-align: center;
+    padding: 3em;
+    gap: 1rem;
+    margin: auto;
+}
+
+.gift-shop {
+    flex-direction: row-reverse;
+}
+
+/*  ----------  Online delivery  ----------  */
+.item3 {
+    background-color: #def3ed;
+}
+
+.delivery-container img {
+    width: 70%;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+/*  ---------- Footer  ---------- */
+
+.copyright {
+    background-color: #C4F8E9;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.copyright p {
+    color: #2A3D41;
+    padding: 0;
+}
+
+object {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+footer .double-article {
+    background-color: #ecfaf8;
+}
+
+/*  ---------- Button ---------- */
+.button {
+    border: 3px solid #C4F8E9;
+    display: block;
+    margin: .5rem auto;
+    width: 10rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    color: #2A3D41;
+    text-decoration: none;
+    padding: .5rem .3rem;
+    transition: .2s;
+    font-weight: 500;
+    letter-spacing: .8px;
+    background-color: #def3ed;
+}
+
+.button:hover {
+    padding: .5rem 1rem;
+    background-color: #11d3bc;
+    color: white;
+}
+
+.about-container .button,
+footer .button {
+    margin-top: 2rem;
+}
+
+/*  ---------- Other pages ---------- */
+
+/*  ---------- About and Menu ---------- */
+
+.main-about img {
+    width: 100%;
+}
+
+.main-single-pages-container {
+    margin: -4rem auto 2rem;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 8px 12px 6px rgba(90, 84, 84, 0.159);
+}
+
+figcaption {
+    font-size: .9em;
+    text-align: right;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+
+/* Menu items */
+
+.menu-item {
+    font-size: 1rem;
+    padding: 0;
+    width: 50%;
+    justify-content: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.menu-heading {
+    font-size: 1.5rem;
+}
+
+.menu-item h4 {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0;
+}
+
+.menu-item p {
+    font-size: .9rem;
+}
+
+.menu-benny {
+    border-bottom: 1px solid #11d3bc;
+    margin-top: 1rem;
+}
+
+
+
+/*  ---------- Contact ---------- */
+
+/* Form */
+.form {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.form .first-line {
+    padding: 0;
+    line-height: 10px;
+    gap: 5px;
+    margin-bottom: .4em;
+}
+
+.label {
+    display: none;
+}
+
+.submit-button {
+    margin: 1rem auto;
+}
+
+
+.label {
+    margin: 0;
+    padding: 0;
+}
+
+.text-input {
+    width: 100%;
+    display: block;
+    padding: .5em;
+    background-color: #b7f0e9;
+    border: none;
+    transition: .2s;
+    margin: 0;
+}
+
+.textarea {
+    min-width: 96.5%;
+    display: block;
+    padding: .8em;
+    background-color: #b7f0e9;
+    border: none;
+    transition: .2s;
+    font-family: inherit;
+}
+
+.textarea:hover,
+.text-input:hover {
+    border-bottom: .5rem solid #11d3bc;
+}
+
+
+/* ---------- Gift shop ----------  */
+
+
+.main-single-pages-container-wide {
+    /* margin: -4rem auto 4rem;  */
+    max-width: 1020px;
+    padding: 2rem 1rem;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 5px 8px 12px 6px rgba(90, 84, 84, 0.159); */
+    text-align: center;
+}
+
+.grid-container img {
+    width: 70%;
+    border-radius: 1rem;
+    /* padding-bottom: 1em; */
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    /* grid-template-rows: repeat(33%);  */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* grid-template-rows: 300px; */
+    grid-gap: 10px 10px;
+    align-items: center;
+    align-self: center;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.grid-container h4 {
+    font-size: 1.1rem;
+}
+
+.grid-container p {
+    font-size: .9rem;
+}
+
+.grid-container>* {
+    /* border: 1px solid #11d3bc; */
+    padding: 1rem 0;
+    box-shadow: 5px 8px 12px 6px rgba(90, 84, 84, 0.159);
+    border-radius: 0.5em;
+    margin: 0 auto;
+    transition: .2s;
+
+}
+
+.grid-container>*:hover {
+    background-color: #c2f9f1;
+}
+
+.checkout-container {
+    width: 100%;
+}
+
+.checkout {
+    margin: 2rem auto;
+    display: block;
+    justify-content: space-between;
+}
+
+/* Just practicing media queries :D */
+
+@media screen and (max-width: 712px) {
+
+    .photo-container,
+    .text-container {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .photo-container {
+        height: 350px;
+    }
+
+
+    .double-article,
+    .flex {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .main-single-pages-container {
+        padding: 0;
+    }
+
+    .hero-banner {
+        height: 50vh;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .hero-title-main {
+        margin-top: 12rem;
+    }
+
+    .hero-middle {
+        height: 200px;
+    }
+
+    footer .button {
+        margin-bottom: 2rem;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    form {
+        max-width: 60vw;
+    }
+
+}
